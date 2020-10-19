@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 body,html{
     height:100%;
     margin:0;
     overflow-x:hidden;
     overflow-y:hidden;
 }
+
+/*home*/
 .container{
   background-image: linear-gradient(315deg,  rgba(97, 153, 33, 0.1),
-  rgba(54, 29, 3, 0.2)),url('https://cdn.pixabay.com/photo/2017/02/15/10/57/pizza-2068272__340.jpg');
+  rgba(14, 13, 13, 0.7)),url('https://wallpaperaccess.com/full/767033.jpg');
   min-height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -24,11 +27,10 @@ right: 6%;;
 
 }
 .navlink{
-font-family: Arial;
-font-size: 18px;
-opacity:0.8;
-color: #09090a;
-font-weight: 600;
+font-family:Raleway;
+font-size: 15px;
+color: white;
+font-weight: 500;
 text-decoration: none;
 padding-left: 53px;
 position: relative;
@@ -37,19 +39,19 @@ cursor: pointer;
 }
 .navlink:after {    
     background: none repeat scroll 0 0 transparent;
-    bottom: -8px;
+    bottom: -5px;
     content: "";
     display: block;
-    height: 3px;
+    height: 1px;
     left: 50%;
     position: absolute;
-    background: black;
+    background: white;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
   .navlink:hover:after { 
-    width: 70%; 
-    left: 50px; 
+    width: 50%; 
+    left: 53px; 
   }
   #inner-container{
       display:flex;
@@ -65,17 +67,17 @@ cursor: pointer;
 margin-top:13%;
 display: flex;
 flex-direction: column;
-width: 37%;
+width: 42%;
 text-align:left;
 
 
 }
 #text1,#text2{
-    color:#09090a;
-    font-size:28px;
+    color: white;
+    font-size:45px;
     text-align:left;
-    font-weight: 600;
-    font-family: Arial;
+    font-weight: 400;
+    font-family: Raleway;
   
     
 }
@@ -85,17 +87,17 @@ animation: moveInleft 3s;
 
 }
 #text2{
-    font-size:60px;
+    font-size:70px;
     margin:-10px 20px 0px 0px;
     animation: moveInleft 3s;
   
 }
 .btn{
-    font-family: Arial;  
-    color:black;
+    font-family: Raleway; 
+    color:white;
     background-color: inherit; 
-    font-weight: 600;
-    border:2px solid black ; 
+    font-weight: 400;
+    border:2px solid white ; 
     height:30px;
     width:120px;
     cursor: pointer; 
@@ -108,7 +110,7 @@ btn:focus{
   }
 #btnlink{
     text-decoration: none;
-    color:inherit;
+    color:white;
 }
 @keyframes moveInleft {
     0% {
@@ -155,9 +157,9 @@ btn:focus{
 
   }
 #line{
-    height:95px;
+    height:80px;
     width:2px;
-    background-color: black;
+    background-color: white;
     margin-left:94%;
     top:-28px;
     animation:linedown 3s forwards;
@@ -173,11 +175,12 @@ btn:focus{
   }
 
 
-.fa{
+.fa1{
     display:block;
     margin-left:94%;
-    margin-bottom:30px;
+    margin-bottom:25px;
     cursor: pointer;
+    
 }
 .fa-facebook{
     animation: showup 4s;
@@ -196,31 +199,54 @@ btn:focus{
 }
 .enabled{
     height:100%;
-   background-image: linear-gradient(315deg,  rgba(25, 26, 24, 0.5),
-   rgba(54, 29, 3, 0.2)),url( "https://media.istockphoto.com/photos/laminate-wooden-floor-texture-background-picture-id1083302826?b=1&k=6&m=1083302826&s=170667a&w=0&h=qf8_ylvsQzu9HmA7y-LihgbC2B4wVohCV6xhlPWZcbQ=");
+   background-image: linear-gradient(315deg,  rgba(25, 26, 24, 0.8),
+   rgba(54, 29, 3, 0.8)),url( "https://media.istockphoto.com/photos/laminate-wooden-floor-texture-background-picture-id1083302826?b=1&k=6&m=1083302826&s=170667a&w=0&h=qf8_ylvsQzu9HmA7y-LihgbC2B4wVohCV6xhlPWZcbQ=");
    background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; 
-   overflow-y:scroll;
+  
 
+}
+
+/*menu*/
+.menu-order{
+  display:flex;
+  color:white;
+  margin:6% 0 0 10%;
+ font-size:18px;
+  width:1fr;
+  
+}
+#order-p1{
+  flex-wrap:no-wrap;
+  
+}
+#order-p2{
+  margin-left:35%;
+  flex-wrap:no-wrap;
+ 
 }
 .grid-container {
     display: grid;
-    grid-gap: 60px;
-    grid-template-columns: auto auto auto;
-    padding: 56px 20px 50px 20px;
-  
-
+    grid-gap: 60px 20px;
+    grid-template-columns:repeat(3, minmax(30px, 1fr));
+    padding: 20px 20px 50px 20px;
+    font-family:Raleway;
+    font-weight:600;
+    font-size:15px;
+    border:1px solid white;
+    width:80%;
+    margin:-8px 0 0 8%;
+    justify-items: center;
   }
   .grid-item {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    height: 230px;
-    width:350px;
+    height: 150px;
     text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
-    
+    font-family:Raleway;
+    border-radius: 25px 25px 0 0;
     
   }
   .images{
@@ -229,54 +255,104 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     align-self:center;
     width:100%;
     height: 100%;
+    border-radius: 25px 25px 0 0;
   }
   .btn-container{
     display:flex;
     justify-content: center;
+    padding-left:20px;
+    background-color: white;
+    border-radius: 0 0 25px 25px ;
+    height:30px;
+    padding-top:10px;
   }
   .btn2{
-   background-color: red;
-  display:block;
-  width:150px;
-  color:white;
+   background-color:inherit ;
+   height:20px;
+  margin-left:10px;
+  color:black;
   cursor:pointer;
 
   }
   .btn2:hover {
     transform: scale(1.2);
   }
+  .btn2:focus,.btn2:visited {
+  background-color:black;
+  color:white;
+  }
+
+
+  /*about*/
   #about{
-    height:100vh;
-    overflow-y:hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
+    height:100%;
+    font-family: Raleway;
+    font-size:15px;
+    font-weight: 500;
+    color:white;
     line-height:20px;
-    padding:50px 30px 0 30px;
+    padding:0 80px 0 80px;
   }
-  .hor-line{
-    width:30px;
-    height:2px;
-    background-color: red;
-    margin-top:-15px;
-  }
-  #heading{
-    text-align:center;
+  
+  .about-arr{
+    height:45%;
     display:flex;
-    flex-direction:column;
-    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
   }
+  
+  .heading{
+    padding-top:50px;
+    padding-left:25px;
+  }
+  .words,#words2{
+    width:50%;
+  }
+  #words2{
+    margin-left:80px;
+   
+  }
+  #about-img1,#about-img2{
+    width:40%;
+    margin-left:50px;
+    height:230px;
+    
+  }
+ .img-correct{
+   border-radius:0;
+ }
+
+
+ /*interior*/
   #interior{
       height:100%;
-      display:flex;
-      padding:60px 0px 30px 15px;
-      
+      display:flex; 
+      flex-direction:column;
+      color:white;
+      font-family: Raleway;
+      font-weight: 500;
+      padding: 0 80px 0 80px;
+  }
+  .heading2{
+    padding-top:50px;
   }
   .box-img{
-    height:70vh;
-    width: 95vw;
-    padding-bottom:30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    margin-top:10px;
+    width:100%;
+    height:350px;
+
+  }
+  #case{
+    display:flex;
+  }
+  .box-img1{
+   width:50%;
+   margin-top:10px; 
+   margin-right:10px;
+  }
+
+  .last-img{
+    padding-bottom:50px;
   }
   .interior-img{
     object-fit:fill;
@@ -284,10 +360,13 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     width:100%;
     height: 100%;
   }
+
+
+  /*contact*/
   #contact{
-    height:100vh;
+    height:100%;
     display:flex;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Raleway;
   overflow-y:hidden;
  
     
@@ -297,6 +376,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   display:flex;
   justify-content: center;
    padding-top:70px;
+   color:white;
 }
 
 #contact2{
@@ -305,21 +385,29 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   justify-content: center;
    padding-top:80px;
 } 
-input{
+input,#textarea{
   background-color: inherit;
-  border:2px solid black;
+  border:2px solid white;
   border-radius: 15px;
   width:300px;
   height:30px;
-  color:black;
+  color:white;
   margin-bottom:20px;
+  padding-left:10px;
 }
+#textarea{
+  height:90px;
+  font-family: Raleway;
+}
+
 ::placeholder {
-  color: rgb(26, 24, 24);
-  
+  color: white;
+  opacity:0.7;
 }
 
 
 ::-ms-input-placeholder {
- color: rgb(26, 24, 24);
+ color: white;
+ opacity:0.7;
 }
+ 
