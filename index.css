@@ -37,6 +37,11 @@ position: relative;
 cursor: pointer;
 
 }
+@media screen and (max-width: 650px) {
+ .navlink{
+    font-size: 10px;
+ }
+}
 .navlink:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: -5px;
@@ -410,4 +415,14 @@ input,#textarea{
  color: white;
  opacity:0.7;
 }
- 
+@media screen and (max-width: 650px) {
+#contact{
+  flex-direction:column;
+  padding-left: 25vw;
+  font-size:12px;
+}
+
+input,#textarea{
+  width:250px;
+}
+}
