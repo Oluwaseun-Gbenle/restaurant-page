@@ -205,6 +205,7 @@ btn:focus{
 @media screen and (max-width: 650px) {
   .navlink{
      font-size: 10px;
+     padding-left: 23px;
   }
   #text1{
     font-size:35px;
@@ -218,6 +219,10 @@ btn:focus{
  }
 
 /*menu*/
+#justify-gridcont{
+  display:flex;
+  justify-content: center;
+}
 .menu-order{
   display:flex;
   color:white;
@@ -242,7 +247,7 @@ btn:focus{
     font-size:15px;
     border:1px solid white;
     width:80%;
-    margin:-8px 0 0 8%;
+    margin-top:-8px;
     justify-items: center;
   }
   .grid-item {
@@ -357,6 +362,9 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
    .grid-container{
     grid-template-columns:repeat(1, minmax(30px, 1fr));
    }
+   #nav{
+     justify-content: center;
+   }
  }
  /*interior*/
   #interior{
@@ -448,7 +456,7 @@ input,#textarea{
 #contact{
   flex-direction:column;
   padding-left: 25vw;
-  font-size:12px;
+  font-size:14px;
 }
 
 input,#textarea{
