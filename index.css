@@ -207,6 +207,10 @@ btn:focus{
      font-size: 10px;
      padding-left: 23px;
   }
+  .navlink:hover:after { 
+    width: 50%; 
+    left: 23px; 
+  }
   #text1{
     font-size:35px;
   }
