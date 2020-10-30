@@ -237,6 +237,12 @@ btn:focus{
 #order-p2{
   flex-wrap:no-wrap;
 }
+@media screen and (max-width: 650px) {
+  #order-p1,#order-p2{
+    font-size:12px;
+    padding-top:10px;
+  }
+}
 .grid-container {
     display: grid;
     grid-gap: 60px 20px;
