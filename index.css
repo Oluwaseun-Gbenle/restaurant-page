@@ -23,7 +23,7 @@ width: 100%;
 text-align: right;
 margin-top: 18px;
 position: fixed;
-right: 6%;;
+right: 6%;
 
 }
 .navlink{
@@ -36,11 +36,6 @@ padding-left: 53px;
 position: relative;
 cursor: pointer;
 
-}
-@media screen and (max-width: 650px) {
- .navlink{
-    font-size: 10px;
- }
 }
 .navlink:after {    
     background: none repeat scroll 0 0 transparent;
@@ -60,21 +55,18 @@ cursor: pointer;
   }
   #inner-container{
       display:flex;
-      width: 100%;
+      height: 100vh;
       flex-direction: row;
+      align-items: center;
+      
   }
   #space{
-    margin-top:13%;
     width:63%;
- 
   }
+ 
 #text{
-margin-top:13%;
 display: flex;
 flex-direction: column;
-width: 42%;
-text-align:left;
-
 
 }
 #text1,#text2{
@@ -157,18 +149,17 @@ btn:focus{
     right: 0;
   }
   #social{
-      left:90%;
-      top:55%;
-
+    position:relative;
+    top:188px;
+     margin-left:90px;
+     padding-right:20px;
   }
 #line{
     height:80px;
     width:2px;
     background-color: white;
-    margin-left:94%;
-    top:-28px;
     animation:linedown 3s forwards;
-    position: relative
+    position: relative;
 }
 @keyframes linedown {
     0% {
@@ -180,14 +171,8 @@ btn:focus{
   }
 
 
-.fa1{
-    display:block;
-    margin-left:94%;
-    margin-bottom:25px;
-    cursor: pointer;
-    
-}
 .fa-facebook{
+  margin-top:15px;
     animation: showup 4s;
 }
 .fa-twitter{
@@ -202,6 +187,11 @@ btn:focus{
     100% {opacity:1;}
    
 }
+.fa1{
+  margin-bottom:25px;
+  cursor: pointer;
+    
+}
 .enabled{
     height:100%;
    background-image: linear-gradient(315deg,  rgba(25, 26, 24, 0.8),
@@ -212,6 +202,20 @@ btn:focus{
   
 
 }
+@media screen and (max-width: 650px) {
+  .navlink{
+     font-size: 10px;
+  }
+  #text1{
+    font-size:35px;
+  }
+  #text2{
+    font-size:55px;
+  }
+  .btn{
+    width:90px;
+  }
+ }
 
 /*menu*/
 .menu-order{
@@ -219,23 +223,20 @@ btn:focus{
   color:white;
   margin:6% 0 0 10%;
  font-size:18px;
-  width:1fr;
-  
+  width:79%;
+  justify-content: space-between;
 }
 #order-p1{
   flex-wrap:no-wrap;
-  
 }
 #order-p2{
-  margin-left:35%;
   flex-wrap:no-wrap;
- 
 }
 .grid-container {
     display: grid;
     grid-gap: 60px 20px;
     grid-template-columns:repeat(3, minmax(30px, 1fr));
-    padding: 20px 20px 50px 20px;
+    padding: 20px 20px 80px 20px;
     font-family:Raleway;
     font-weight:600;
     font-size:15px;
@@ -259,7 +260,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     object-fit:fill;
     align-self:center;
     width:100%;
-    height: 100%;
+    height:100%;
     border-radius: 25px 25px 0 0;
   }
   .btn-container{
@@ -268,14 +269,13 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     padding-left:20px;
     background-color: white;
     border-radius: 0 0 25px 25px ;
-    height:30px;
     padding-top:10px;
   }
   .btn2{
    background-color:inherit ;
-   height:20px;
-  margin-left:10px;
+  margin:0px 4px 7px 7px;
   color:black;
+  border-radius: 5px;
   cursor:pointer;
 
   }
@@ -300,7 +300,6 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   }
   
   .about-arr{
-    height:45%;
     display:flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -320,14 +319,45 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   #about-img1,#about-img2{
     width:40%;
     margin-left:50px;
-    height:230px;
-    
+      
   }
  .img-correct{
    border-radius:0;
  }
-
-
+ @media screen and (max-width:900px){
+.about-arr{
+  flex-direction: column;  
+}
+#about-arr2{
+  flex-direction: column-reverse;
+}
+#about-heading{
+  padding-left:0;
+}
+#about-img1,#about-img2{
+  width:100%;
+  margin-left:0px; 
+}
+.words,#words2{
+  width:100%;
+  margin-left:0;
+}
+ }
+ @media screen and (max-width:750px){
+ .grid-container{
+  grid-template-columns:repeat(2, minmax(30px, 1fr));
+ }
+}
+ @media screen and (max-width:650px){
+ #about{
+  font-size:12px;
+}
+ }
+ @media screen and (max-width:500px){
+   .grid-container{
+    grid-template-columns:repeat(1, minmax(30px, 1fr));
+   }
+ }
  /*interior*/
   #interior{
       height:100%;
@@ -344,8 +374,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   .box-img{
     margin-top:10px;
     width:100%;
-    height:350px;
-
+  
   }
   #case{
     display:flex;
@@ -363,7 +392,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     object-fit:fill;
     align-self:center;
     width:100%;
-    height: 100%;
+   
   }
 
 

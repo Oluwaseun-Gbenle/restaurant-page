@@ -13,3 +13,12 @@ fetch('https://juniors-restaurant.glitch.me/api/order')
          data.map(d=>{tab =`<div class="grid-item"><img class="images" src=${d.image} alt=${d.name}/><div class="btn-container">${d.name}<button class="btn2">Order Now</button></div></div>`;html +=tab})
        document.querySelector(".grid-container").innerHTML = html;  
         }
+        var currentItems = 0;
+        $(document).ready(function(){
+          $(".btn2").click(function(){
+            currentItems++;
+            $("#order-p2").html(function(){
+           return  currentItems + 'selected-<i class="fa fa-shopping-cart" style="cursor:pointer;">Checkout</i>';
+          })
+          })
+        })
